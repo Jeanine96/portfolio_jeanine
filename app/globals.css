@@ -1,13 +1,38 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* Background colors */
   --color-primary: rgb(var(--color-primary));
   --color-secondary: rgb(var(--color-secondary));
   --color-accent: rgb(var(--color-accent));
 
-  --text-primary: rgb(var(--text-primary));
-  --text-secondary: rgb(var(--text-secondary));
+  /* Text colors */
+  --color-text-one: rgb(var(--color-text-one));
+  --color-text-two: rgb(var(--color-text-two));
+  --color-text-three: rgb(var(--color-text-three));
 
+  /* Font sizes */
+  --text-fontsize-h1: 11.25rem;
+  --text-fontsize-h2: 3.5rem;
+  --text-fontsize-h3: 3.25rem;
+  --text-fontsize-body: 1rem;
+  --text-fontsize-large-body: 1.125rem;
+  --text-fontsize-tag: 0.875rem;
+  --text-fontsize-button: 1rem;
+
+  /* Font weights */
+  --font-weight-h1: 500;
+  --font-weight-h2: 700;
+  --font-weight-h3: 700;
+  --font-weight-body: 400;
+  --font-weight-large-body: 600;
+  --font-weight-tag: 500;
+  --font-weight-button: 500;
+
+  /* Lineheight text */
+  --leading-lineheight-text: 1.2;
+
+  /* Font */
   --font-montserrat: var(--font-montserrat);
 }
 
@@ -17,29 +42,9 @@
   --color-secondary: 178 203 11;
   --color-accent: 239 239 239;
 
-  --text-primary: 1 62 116;
-  --text-secondary: 255 255 255;
-
-  /* Font sizes */
-  --fontsize-h1: 11.25rem;
-  --fontsize-h2: 3.5rem;
-  --fontsize-h3: 3.25rem;
-  --fontsize-body: 1rem;
-  --fontsize-large-body: 1.125rem;
-  --fontsize-tag: 0.875rem;
-  --fontsize-button: 1rem;
-
-  /* Font weights */
-  --fontweight-h1: 500;
-  --fontweight-h2: 700;
-  --fontweight-h3: 700;
-  --fontweight-body: 400;
-  --fontweight-large-body: 600;
-  --fontweight-tag: 500;
-  --fontweight-button: 500;
-
-  /* Lineheight text */
-  --lineheight-text: 1.5;
+  --color-text-one: 1 62 116;
+  --color-text-two: 178 203 11;
+  --color-text-three: 255 255 255;
 }
 
 /* @media (prefers-color-scheme: dark) {
