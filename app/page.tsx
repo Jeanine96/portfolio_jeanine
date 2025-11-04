@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* projects */}
-      <section className="bg-tertiary px-[92] h-screen">
+      <section className="bg-tertiary px-[152] h-screen">
         <ProjectPage></ProjectPage>
       </section>
     </main>
