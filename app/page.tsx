@@ -1,4 +1,5 @@
 import IconsColumn from "@/components/ProgramLanguageIcon";
+import ProjectPage from "@/components/ProjectPage";
 
 export default function Home() {
   const codeIcons = [
@@ -27,26 +28,30 @@ export default function Home() {
 
   return (
     <main>
-      <section className="homePage flex flex-row ml-[152] mr-[92] my-[32] items-center">
-        <div className="text-frontpage  w-84">
-          <div className="text-title">
-            <h2 className="text-text-two text-fontsize-h2 font-h2">
-              Front-end
+      {/* homepage */}
+      <section
+        className="flex flex-row ml-[152] mr-[92] items-center max-h-screen "
+        style={{ minHeight: "calc(100vh - 6rem)" }}
+      >
+        {/* text homepage */}
+        <div className="w-84 items-center">
+          {/* title */}
+          <h2 className="text-text-two text-fontsize-h2 font-h2">Front-end</h2>
+          <div className="flex flex-row items-center gap-4 ">
+            <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
+              Developer
             </h2>
-            <div className="title flex flex-row items-center gap-4 ">
-              <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
-                Developer
-              </h2>
-              <span className="material-symbols-rounded text-text-three !text-5xl">
-                health_metrics
-              </span>
-            </div>
+            <span className="material-symbols-rounded text-text-three !text-5xl">
+              health_metrics
+            </span>
           </div>
+          {/* subtext */}
           <p className="text-text-three text-fontsize-body font-body">
             Ik vind het interessant om digitale producten te ontwikkelen voor de
             medische wereld.
           </p>
         </div>
+        {/* picture */}
         <div className="flex-row flex justify-between items-center">
           <div className="w-1/4 ml-[44%] ">
             <img
@@ -54,13 +59,17 @@ export default function Home() {
               src="./picture_jeanine.jpeg"
               alt="picture"
             />
-            <div className="absolute top-60 left-232 z-0 h-[340] w-[236] border border-text-three rounded-lg bg-transparent"></div>
+            <div className="absolute top-63 left-232 z-0 h-[340] w-[236] border border-text-three rounded-lg bg-transparent"></div>
           </div>
 
-          <div className="">
-            <IconsColumn className="gap-8" programlanguageicons={codeIcons} />
-          </div>
+          {/* program language icon array */}
+          <IconsColumn className="gap-8" programlanguageicons={codeIcons} />
         </div>
+      </section>
+
+      {/* projects */}
+      <section className="bg-tertiary px-[92] h-screen">
+        <ProjectPage></ProjectPage>
       </section>
     </main>
   );
