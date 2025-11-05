@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import IconsColumn from "@/components/ProgramLanguageIcon";
 import ProjectPage from "@/components/ProjectPage";
 
@@ -68,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* projects */}
-      <section className="bg-tertiary px-[152] h-screen">
+      <section className="bg-tertiary px-[152]">
         <ProjectPage></ProjectPage>
       </section>
     </main>

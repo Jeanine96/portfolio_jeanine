@@ -49,28 +49,6 @@ export default function ProjectItem({
     );
 
   return (
-    // text
-    // <div className="flex flex-row gap-16">
-    //   {mediaPosition === "left" && <div>{MediaElement}</div>}
-    //   <div className="flex flex-col items-start">
-    //     <h4 className="font-h4 text-fontsize-h4 text-text-one mb-6">{title}</h4>
-
-    //     {tags.length > 0 && (
-    //       <div className="flex flex-wrap gap-2">
-    //         {tags.map((tag, index) => (
-    //           <Tag key={index} {...tag} />
-    //         ))}
-    //       </div>
-    //     )}
-
-    //     <p className="text-text-one text-fontsize-body font-body w-100 h-full mt-10">
-    //       {description}
-    //     </p>
-    //   </div>
-    //   {/* picture right or left */}
-
-    //   {mediaPosition === "right" && <div>{MediaElement}</div>}
-    // </div>
     <div className="flex flex-col ">
       <h4 className="font-h4 text-fontsize-h4 text-text-one mb-6">{title}</h4>
       {tags.length > 0 && (
