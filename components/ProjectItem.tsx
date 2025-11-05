@@ -63,7 +63,7 @@ export default function ProjectItem({
           <div className="flex-1">{MediaElement}</div>
         )}
 
-        <p className="text-text-one text-fontsize-body font-body h-full flex-1">
+        <p className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular h-full flex-1">
           {description}
         </p>
 

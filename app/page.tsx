@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import IconsColumn from "@/components/ProgramLanguageIcon";
 import ProjectPage from "@/components/ProjectPage";
 

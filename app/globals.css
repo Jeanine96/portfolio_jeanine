@@ -34,6 +34,7 @@
 
   /* Lineheight text */
   --leading-lineheight-text: 1.2;
+  --leading-lineheight-text-regular: 1.5;
 
   /* Font */
   --font-montserrat: var(--font-montserrat);
