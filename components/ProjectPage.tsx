@@ -6,7 +6,7 @@ export default function ProjectPage() {
       <h3 className="text-fontsize-h3 text-text-one font-h3 pt-20 mb-8">
         Projecten
       </h3>
-      <div className="flex flex-col gap-30">
+      <div className="flex flex-col gap-30 pb-20">
         <ProjectItem
           title={"Runnovation"}
           description={
