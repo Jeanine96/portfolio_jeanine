@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Tag from "./Tag";
+import Button from "./Button";
 
 interface TagProps {
   src: string;
@@ -62,10 +63,12 @@ export default function ProjectItem({
         {mediaPosition === "left" && (
           <div className="flex-1">{MediaElement}</div>
         )}
-
-        <p className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular h-full flex-1">
-          {description}
-        </p>
+        <div className="flex flex-col h-full gap-6">
+          <p className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular flex-1">
+            {description}
+          </p>
+          <Button text={"Bekijk project"}></Button>
+        </div>
 
         {mediaPosition === "right" && (
           <div className="flex-1 flex justify-end">{MediaElement}</div>

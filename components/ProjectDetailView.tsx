@@ -1,6 +1,7 @@
 // components/ProjectDetail.tsx
 import Image from "next/image";
 import Tag from "./Tag";
+import Button from "./Button";
 
 interface TagProps {
   src: string;
@@ -41,7 +42,7 @@ export default function ProjectDetailView({
         />
       </div>
 
-      <div className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular">
+      <div className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular mb-2">
         {Array.isArray(description) ? (
           description.map((para, idx) => (
             <p key={idx} className="mb-4">
@@ -52,6 +53,12 @@ export default function ProjectDetailView({
           <p>{description}</p>
         )}
       </div>
+
+      <Button
+        text="Bekijk code"
+        iconSrc="/github-icon.svg"
+        iconAlt="github-icon"
+      />
     </div>
   );
 }
