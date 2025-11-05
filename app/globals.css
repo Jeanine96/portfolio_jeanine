@@ -4,6 +4,7 @@
   /* Background colors */
   --color-primary: rgb(var(--color-primary));
   --color-secondary: rgb(var(--color-secondary));
+  --color-tertiary: rgb(var(--color-tertiary));
   --color-accent: rgb(var(--color-accent));
 
   /* Text colors */
@@ -15,6 +16,7 @@
   --text-fontsize-h1: 11.25rem;
   --text-fontsize-h2: 3.5rem;
   --text-fontsize-h3: 3.25rem;
+  --text-fontsize-h4: 2rem;
   --text-fontsize-body: 1rem;
   --text-fontsize-large-body: 1.125rem;
   --text-fontsize-tag: 0.875rem;
@@ -24,6 +26,7 @@
   --font-weight-h1: 500;
   --font-weight-h2: 700;
   --font-weight-h3: 700;
+  --font-weight-h4: 600;
   --font-weight-body: 400;
   --font-weight-large-body: 600;
   --font-weight-tag: 500;
@@ -40,6 +43,7 @@
   /* Colors */
   --color-primary: 1 62 116;
   --color-secondary: 178 203 11;
+  --color-tertiary: 255 255 255;
   --color-accent: 239 239 239;
 
   --color-text-one: 1 62 116;
