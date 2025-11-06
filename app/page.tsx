@@ -30,6 +30,7 @@ export default function Home() {
     <main>
       {/* homepage */}
       <section
+        id="homepage"
         className="flex flex-row ml-[152] mr-[92] items-center max-h-screen "
         style={{ minHeight: "calc(100vh - 6rem)" }}
       >
@@ -68,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* projects */}
-      <section className="bg-tertiary px-[152]">
+      <section id="projects" className="bg-tertiary px-[152]">
         <ProjectPage></ProjectPage>
       </section>
     </main>
