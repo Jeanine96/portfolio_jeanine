@@ -1,6 +1,7 @@
 import IconsColumn from "@/components/ProgramLanguageIcon";
 import ProjectPage from "@/components/ProjectPage";
 import PulsingIcon from "@/components/PulsingIcon";
+import ScrollDownIndicator from "@/components/ScrollDownIndicator";
 
 export default function Home() {
   const codeIcons = [
@@ -32,44 +33,49 @@ export default function Home() {
       {/* homepage */}
       <section
         id="homepage"
-        className="flex flex-row ml-[152] mr-[92] items-center max-h-screen "
+        className="flex flex-col ml-[152] mr-[92]  max-h-screen mb-8"
         style={{ minHeight: "calc(100vh - 6rem)" }}
       >
-        {/* text homepage */}
-        <div className="w-84 items-center">
-          {/* title */}
-          <h2 className="text-text-two text-fontsize-h2 font-h2">Front-end</h2>
-          <div className="flex flex-row items-center gap-4 ">
-            <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
-              Developer
+        <div className="flex flex-row items-center">
+          {/* text homepage */}
+          <div className="w-84 items-center">
+            {/* title */}
+            <h2 className="text-text-two text-fontsize-h2 font-h2">
+              Front-end
             </h2>
-            <PulsingIcon
-              iconName="health_metrics"
-              size="!text-5xl"
-              pulseAmount={0.3}
-              className="text-text-three"
-            />
+            <div className="flex flex-row items-center gap-4 ">
+              <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
+                Developer
+              </h2>
+              <PulsingIcon
+                iconName="health_metrics"
+                size="!text-5xl"
+                pulseAmount={0.3}
+                className="text-text-three"
+              />
+            </div>
+            {/* subtext */}
+            <p className="text-text-three text-fontsize-body font-body">
+              Ik vind het interessant om digitale producten te ontwikkelen voor
+              de medische wereld.
+            </p>
           </div>
-          {/* subtext */}
-          <p className="text-text-three text-fontsize-body font-body">
-            Ik vind het interessant om digitale producten te ontwikkelen voor de
-            medische wereld.
-          </p>
-        </div>
-        {/* picture */}
-        <div className="flex-row flex justify-between items-center">
-          <div className="w-1/4 ml-[44%] ">
-            <img
-              className="rounded-lg w-full h-auto relative z-10"
-              src="./picture_jeanine.jpeg"
-              alt="picture"
-            />
-            <div className="absolute top-63 left-232 z-0 h-[340] w-[236] border border-text-three rounded-lg bg-transparent"></div>
-          </div>
+          {/* picture */}
+          <div className="flex-row flex justify-between items-center">
+            <div className="w-1/4 ml-[44%] ">
+              <img
+                className="rounded-lg w-full h-auto relative z-10"
+                src="./picture_jeanine.jpeg"
+                alt="picture"
+              />
+              <div className="absolute top-52 left-232 z-0 h-[340] w-[236] border border-text-three rounded-lg bg-transparent"></div>
+            </div>
 
-          {/* program language icon array */}
-          <IconsColumn className="gap-8" programlanguageicons={codeIcons} />
+            {/* program language icon array */}
+            <IconsColumn className="gap-8" programlanguageicons={codeIcons} />
+          </div>
         </div>
+        <ScrollDownIndicator />
       </section>
 
       {/* projects */}
