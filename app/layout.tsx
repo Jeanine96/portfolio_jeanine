@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className="absolute top-0 left-0 h-full w-[67%] bg-primary"></div>
         <div className="absolute top-0 right-0 h-full w-[33%] bg-secondary"></div>
 
-        <div className="relative z-1">
+        <div className="relative z-1 scroll-smooth">
           <Header />
           {children}
           <Footer />
