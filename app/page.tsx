@@ -1,5 +1,6 @@
 import IconsColumn from "@/components/ProgramLanguageIcon";
 import ProjectPage from "@/components/ProjectPage";
+import PulsingIcon from "@/components/PulsingIcon";
 
 export default function Home() {
   const codeIcons = [
@@ -42,9 +43,12 @@ export default function Home() {
             <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
               Developer
             </h2>
-            <span className="material-symbols-rounded text-text-three !text-5xl">
-              health_metrics
-            </span>
+            <PulsingIcon
+              iconName="health_metrics"
+              size="!text-5xl"
+              pulseAmount={0.3}
+              className="text-text-three"
+            />
           </div>
           {/* subtext */}
           <p className="text-text-three text-fontsize-body font-body">

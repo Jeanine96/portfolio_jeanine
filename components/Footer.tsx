@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PulsingIcon from "./PulsingIcon";
 
 export default function Footer() {
   return (
@@ -8,7 +9,19 @@ export default function Footer() {
           <p className="text-text-three text-fontsize-body font-body">
             HEEFT U EEN PASSENDE STAGEOPDRACHT?
           </p>
-          <h1 className="text-text-two text-fontsize-h1 font-h1">LET'S TALK</h1>
+          <div className="flex flex-row items-center gap-16">
+            <h1 className="text-text-two text-fontsize-h1 font-h1">
+              LET'S TALK
+            </h1>
+            <Link target="_blank" href={"mailto:j.deregter@student.fontys.nl"}>
+              <PulsingIcon
+                iconName="mail"
+                size="!text-fontsize-h1"
+                pulseAmount={0.3}
+                className="text-text-two mt-6"
+              />
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col gap-8">
           <hr className="border-t border-tertiary my-4" />
