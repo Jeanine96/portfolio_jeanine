@@ -35,7 +35,7 @@ export default function ProjectItem({
 }: ProjectItemProps) {
   const MediaElement =
     mediaType === "image" ? (
-      <div className="relative w-[35vw] h-[23vw]">
+      <div className="relative w-[25vw] h-[24vw]">
         <Image
           src={media}
           alt={title}

@@ -66,7 +66,7 @@ export default function ProjectPage() {
           description={
             "Tijdens mijn derdejaarsstage bij Bundeling werkte ik aan het platform dat organisaties helpt hun communicatie, documenten en processen overzichtelijk te beheren via app en web. Voor de webversie ontwikkelde ik nieuwe features in Vue.js om beter aan te sluiten bij de wensen en behoeften van klanten."
           }
-          media={"/bundeling.png"}
+          media={"/review-intership.png"}
           mediaType="image"
           mediaPosition="right"
           tags={[
