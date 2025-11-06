@@ -39,6 +39,12 @@ export default function SpotifyDeafUserProject() {
 
           "Tijdens dit project heb ik geleerd om component-based te werken in Vite. Volgende keer wil ik me verder verdiepen in het structureren van code volgens het C4-model en in het gebruik van duidelijkere benamingen.",
         ]}
+        buttonProps={{
+          text: "Bekijk code",
+          redirectTo: "https://github.com/Jeanine96/beat_visualization_spotify",
+          iconSrc: "/github-icon.svg",
+          iconAlt: "github-icon",
+        }}
       />
     </section>
   );
