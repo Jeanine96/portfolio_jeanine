@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="h-screen bg-primary px-[92] pb-16">
@@ -15,16 +17,28 @@ export default function Footer() {
               © Jeanine de Regter 2025
             </p>
             <div className="flex flex-row gap-8">
-              <img
-                className="w-12 h-12"
-                src="./linkedin-icon.svg"
-                alt="linkedin-icon"
-              />
-              <img
-                className="w-12 h-12"
-                src="./github-icon.svg"
-                alt="github-icon"
-              />
+              <Link
+                target="_blank"
+                href={
+                  "https://www.linkedin.com/in/jeanine-de-regter-683638144/"
+                }
+              >
+                <img
+                  className="w-12 h-12 hover:scale-110"
+                  src="./linkedin-icon.svg"
+                  alt="linkedin-icon"
+                />
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://github.com/Jeanine96?tab=repositories"}
+              >
+                <img
+                  className="w-12 h-12 hover:scale-110"
+                  src="./github-icon.svg"
+                  alt="github-icon"
+                />
+              </Link>
             </div>
           </div>
         </div>

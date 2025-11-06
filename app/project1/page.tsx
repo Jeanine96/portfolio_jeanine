@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import ProjectDetailView from "@/components/ProjectDetailView";
+import { text } from "stream/consumers";
 
 export default function RunnovationProject() {
   return (
@@ -22,6 +23,12 @@ export default function RunnovationProject() {
           "Om het idee duidelijk te maken aan de doelgroep, heb ik in mijn prototype de druk onder de voeten gesimuleerd door op het scherm te drukken. Voor verdere ontwikkeling zijn inlegzolen met sensoren nodig die via Bluetooth met de app verbonden kunnen worden. Op die manier kan het concept daadwerkelijk getest worden door de doelgroep om te zien of het idee in de praktijk werkt.",
           "Tijdens dit project heb ik geleerd om een native app te programmeren met SwiftUI. Daarnaast heb ik een API van een chatbot gebruikt om de virtuele podotherapeut werkend te maken.",
         ]}
+        buttonProps={{
+          text: "Bekijk code",
+          redirectTo: "https://github.com/Jeanine96/Runnovation",
+          iconSrc: "/github-icon.svg",
+          iconAlt: "github-icon",
+        }}
       />
     </section>
   );

@@ -14,12 +14,19 @@ interface ProjectDetailProps {
   tags?: TagProps[];
   image: string;
   description: string | string[];
+  buttonProps?: {
+    text: string;
+    redirectTo?: string;
+    iconSrc: string;
+    iconAlt: string;
+  };
 }
 
 export default function ProjectDetailView({
   title,
   tags = [],
   image,
+  buttonProps,
   description = "",
 }: ProjectDetailProps) {
   return (
@@ -54,11 +61,7 @@ export default function ProjectDetailView({
         )}
       </div>
 
-      <Button
-        text="Bekijk code"
-        iconSrc="/github-icon.svg"
-        iconAlt="github-icon"
-      />
+      {buttonProps && <Button {...buttonProps} />}
     </div>
   );
 }

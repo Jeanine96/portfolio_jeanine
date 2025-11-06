@@ -1,3 +1,4 @@
+import { text } from "stream/consumers";
 import ProjectItem from "./ProjectItem";
 import Tag from "./Tag";
 export default function ProjectPage() {
@@ -24,6 +25,7 @@ export default function ProjectPage() {
               text: "SwiftUI",
             },
           ]}
+          buttonProps={{ text: "Bekijk project", redirectTo: "/project1" }}
         ></ProjectItem>
         <ProjectItem
           title={"Spotify voor dove gebruikers"}
@@ -57,6 +59,7 @@ export default function ProjectPage() {
               text: "JavaScript",
             },
           ]}
+          buttonProps={{ text: "Bekijk project", redirectTo: "/project2" }}
         ></ProjectItem>
         <ProjectItem
           title={"Praktijkervaring bij Bundeling"}
@@ -73,6 +76,7 @@ export default function ProjectPage() {
               text: "Vue.js",
             },
           ]}
+          buttonProps={{ text: "Bekijk project", redirectTo: "/project3" }}
         ></ProjectItem>
       </div>
     </>

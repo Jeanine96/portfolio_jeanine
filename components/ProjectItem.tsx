@@ -18,6 +18,7 @@ interface ProjectItemProps {
   height?: number | string;
   className?: string;
   tags?: TagProps[];
+  buttonProps?: { text: string; redirectTo?: string };
 }
 
 export default function ProjectItem({
@@ -30,6 +31,7 @@ export default function ProjectItem({
   height,
   className = "",
   tags = [],
+  buttonProps,
 }: ProjectItemProps) {
   const MediaElement =
     mediaType === "image" ? (
@@ -67,7 +69,7 @@ export default function ProjectItem({
           <p className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular flex-1">
             {description}
           </p>
-          <Button text={"Bekijk project"}></Button>
+          {buttonProps && <Button {...buttonProps} />}
         </div>
 
         {mediaPosition === "right" && (
