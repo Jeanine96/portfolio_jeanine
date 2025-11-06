@@ -22,6 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
         />
+        <link rel="icon" href="/favicon-J.svg" type="image/svg+xml" />
       </head>
       <body
         className={`${montserrat.variable} antialiased relative min-h-screen leading-lineheight-text`}
