@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 interface PulsingIconProps {
-  iconName: string; // Google Material icon name
-  size?: string; // Tailwind text size (e.g., 'text-4xl')
-  pulseAmount?: number; // Fraction to grow/shrink (e.g., 0.5 = 50%)
-  className?: string; // Additional Tailwind classes
+  iconName: string;
+  size?: string;
+  pulseAmount?: number;
+  className?: string;
 }
 
 export default function PulsingIcon({
