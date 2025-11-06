@@ -1,8 +1,9 @@
+import Button from "@/components/Button";
 import ProjectDetailView from "@/components/ProjectDetailView";
 
 export default function RunnovationProject() {
   return (
-    <section className="bg-tertiary">
+    <section className="bg-tertiary mx-auto">
       <ProjectDetailView
         title={"Runnovation"}
         tags={[

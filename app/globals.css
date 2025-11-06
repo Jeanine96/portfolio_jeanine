@@ -3,6 +3,7 @@
 @theme inline {
   /* Background colors */
   --color-primary: rgb(var(--color-primary));
+  --color-primary-lighter: rgb(var(--color-primary-lighter));
   --color-secondary: rgb(var(--color-secondary));
   --color-tertiary: rgb(var(--color-tertiary));
   --color-accent: rgb(var(--color-accent));
@@ -43,6 +44,7 @@
 :root {
   /* Colors */
   --color-primary: 1 62 116;
+  --color-primary-lighter: 51 112 166;
   --color-secondary: 178 203 11;
   --color-tertiary: 255 255 255;
   --color-accent: 239 239 239;
