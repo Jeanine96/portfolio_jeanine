@@ -4,7 +4,7 @@
 This website showcases my projects and highlights the skills and experience I have gained
 
 ## Installation
-The project is made with Next.js including Tailwind CSS (Next.js version: 16.0.1 and Tailwind CSS version: 4). For the animations I used GSAP
+The project is made with Next.js including Tailwind CSS (Next.js version: 16.0.1 and Tailwind CSS version: 4). For the animations I used GSAP.
 
 For the installation I used:
 - npm install
