@@ -1,4 +1,4 @@
-## Portfolio
+## Showcase Portfolio
 
 ## Description
 This website showcases my projects and highlights the skills and experience I have gained
