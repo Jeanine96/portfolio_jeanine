@@ -27,10 +27,12 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} antialiased relative min-h-screen leading-lineheight-text`}
       >
-        <div className="absolute top-0 left-0 h-full w-[67%] bg-primary"></div>
-        <div className="absolute top-0 right-0 h-full w-[33%] bg-secondary"></div>
+        <div className="absolute inset-0 flex">
+          <div className="w-2/3 bg-primary" />
+          <div className="w-1/3 bg-secondary" />
+        </div>
 
-        <div className="relative z-1 scroll-smooth">
+        <div className="relative scroll-smooth">
           <Header />
           {children}
           <Footer />

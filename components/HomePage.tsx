@@ -3,7 +3,11 @@ import PulsingIcon from "@/components/PulsingIcon";
 import ScrollDownIndicator from "@/components/ScrollDownIndicator";
 export default function HomePage() {
   const codeIcons = [
-    { src: "/nextjs-icon.svg", alt: "Next.js", rotate: -15.22 },
+    {
+      src: "/nextjs-icon.svg",
+      alt: "Next.js",
+      rotate: -15.22,
+    },
     {
       src: "/html5-icon.svg",
       alt: "HTML5",
@@ -51,20 +55,22 @@ export default function HomePage() {
         </div>
         {/* picture */}
         <div className="flex-row flex justify-between items-center">
-          <div className="w-1/4 ml-[44%] ">
+          <div className="relative w-1/4 ml-[44%]">
+            <div className="absolute inset-0 translate-x-6 translate-y-6 border border-text-three rounded-lg z-0"></div>
             <img
               className="rounded-lg w-full h-auto relative z-10"
               src="./picture_jeanine.jpeg"
               alt="picture"
             />
-            <div className="absolute top-52 left-232 z-0 h-[340] w-[236] border border-text-three rounded-lg bg-transparent"></div>
           </div>
 
           {/* program language icon array */}
           <IconsColumn className="gap-8" programlanguageicons={codeIcons} />
         </div>
       </div>
-      <ScrollDownIndicator />
+      <div className="flex col mt-auto justify-center">
+        <ScrollDownIndicator />
+      </div>
     </>
   );
 }
