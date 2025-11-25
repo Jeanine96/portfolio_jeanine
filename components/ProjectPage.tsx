@@ -4,10 +4,10 @@ import Tag from "./Tag";
 export default function ProjectPage() {
   return (
     <>
-      <h3 className="text-fontsize-h3 text-text-one font-h3 pt-20 mb-8">
+      <h3 className="text text-fontsize-h3-mobile pt-10 md:pt-20 md:text-fontsize-h3 text-text-one font-h3 mb-8">
         Projecten
       </h3>
-      <div className="flex flex-col gap-30 pb-20">
+      <div className="flex flex-col md:gap-30 pb-20">
         <ProjectItem
           title={"Runnovation"}
           description={

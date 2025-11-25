@@ -12,7 +12,7 @@ export default function Home() {
         <HomePage></HomePage>
       </section>
 
-      <section id="projects" className="bg-tertiary px-[152]">
+      <section id="projects" className="bg-tertiary px-[16px] md:px-[152]">
         <ProjectPage></ProjectPage>
       </section>
     </main>

@@ -10,13 +10,13 @@ type ProgramLanguageIcon = {
 
 type IconsColumnProps = {
   programlanguageicons: ProgramLanguageIcon[];
-  size?: number;
+  size?: string;
   className?: string;
 };
 
 export default function IconsColumn({
   programlanguageicons,
-  size = 64,
+  size,
   className = "",
 }: IconsColumnProps) {
   return (
@@ -33,10 +33,10 @@ export default function IconsColumn({
             <Image
               src={icon.src}
               alt={icon.alt}
-              width={size}
-              height={size}
+              width={0}
+              height={0}
               style={{ rotate: `${rotation}deg`, ...icon.style }}
-              className="object-contain"
+              className={`${size ?? "w-16 h-16"} object-contain`}
             />
           </div>
         );

@@ -53,7 +53,9 @@ export default function ProjectItem({
 
   return (
     <div className="flex flex-col ">
-      <h4 className="font-h4 text-fontsize-h4 text-text-one mb-6">{title}</h4>
+      <h4 className="text-fontsize-h4-mobile font-h4 text-text-one mb-6 md:text-fontsize-h4 ">
+        {title}
+      </h4>
       {tags.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
@@ -61,12 +63,12 @@ export default function ProjectItem({
           ))}
         </div>
       )}
-      <div className="flex flex-row  mt-8 gap-35">
+      <div className="flex-col md:flex flex-row mt-8 gap-35">
         {mediaPosition === "left" && (
           <div className="flex-1">{MediaElement}</div>
         )}
         <div className="flex flex-col h-full gap-6">
-          <p className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular flex-1">
+          <p className="text-text-one text-fontsize-body-mobile font-body leading-lineheight-text-regular md:text-fontsize-body flex-1">
             {description}
           </p>
           {buttonProps && <Button {...buttonProps} />}

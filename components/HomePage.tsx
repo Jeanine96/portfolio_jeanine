@@ -31,7 +31,7 @@ export default function HomePage() {
   ];
   return (
     <>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-col md:flex-row items-center">
         {/* text homepage */}
         <div className="w-84 items-center">
           {/* title */}
@@ -55,7 +55,7 @@ export default function HomePage() {
         </div>
         {/* picture */}
         <div className="flex-row flex justify-between items-center">
-          <div className="relative w-1/4 ml-[44%]">
+          <div className="relative md:w-1/4 ml-0 md:ml-[44%]">
             <div className="absolute inset-0 translate-x-6 translate-y-6 border border-text-three rounded-lg z-0"></div>
             <img
               className="rounded-lg w-full h-auto relative z-10"
