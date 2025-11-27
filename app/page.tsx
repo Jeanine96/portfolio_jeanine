@@ -6,8 +6,7 @@ export default function Home() {
     <main>
       <section
         id="homepage"
-        className="flex flex-col ml-[50px] mr-[20px] max-h-screen mb-8 md:ml-[152] mr-[92]  "
-        style={{ minHeight: "calc(100vh - 6rem)" }}
+        className="flex flex-col ml-0 mr-0 max-h-screen mb-8 md:ml-[152px] md:mr-[92px]  "
       >
         <HomePage></HomePage>
       </section>

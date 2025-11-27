@@ -36,7 +36,7 @@ export default function IconsColumn({
               width={0}
               height={0}
               style={{ rotate: `${rotation}deg`, ...icon.style }}
-              className={`${size ?? "w-16 h-16"} object-contain`}
+              className={`${size ?? "w-10 h-10 md:w-16 h-16"} object-contain`}
             />
           </div>
         );
