@@ -23,14 +23,18 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
         />
         <link rel="icon" href="/favicon-J.svg" type="image/svg+xml" />
+        <meta property="og:title" content="Portfolio Jeanine de Regter" />
+        <meta property="og:image" content="./image-portfolio-jeanine.png" />
       </head>
       <body
         className={`${montserrat.variable} antialiased relative min-h-screen leading-lineheight-text`}
       >
-        <div className="absolute top-0 left-0 h-full w-[67%] bg-primary"></div>
-        <div className="absolute top-0 right-0 h-full w-[33%] bg-secondary"></div>
+        <div className="hidden md:flex absolute inset-0 h-screen flex-row">
+          <div className="md:w-2/3 h-full bg-primary" />
+          <div className="md: w-1/3 h-full bg-secondary" />
+        </div>
 
-        <div className="relative z-1 scroll-smooth">
+        <div className="relative scroll-smooth">
           <Header />
           {children}
           <Footer />

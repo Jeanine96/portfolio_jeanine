@@ -11,12 +11,22 @@ export default function Header() {
 
   return (
     <header>
-      <span className="flex-row flex justify-between py-4 mx-[92px] items-center">
+      {/* desktop */}
+      <span className="hidden md:flex md:flex-row md:justify-between md:py-4 md:items-center mx-[92px]">
         <Link href={"/"}>
           <img className="w-1/2" src="/logo_jeanine.svg" alt="Logo" />
         </Link>
         <Menu menuItems={menuItems} />
       </span>
+      {/* mobile */}
+      <div className="bg-primary md:hidden p-4">
+        <span className="flex-row flex justify-between py-4 items-center ">
+          <Link href={"/"}>
+            <img className="w-1/2" src="/logo_jeanine.svg" alt="Logo" />
+          </Link>
+          <Menu menuItems={menuItems} />
+        </span>
+      </div>
     </header>
   );
 }

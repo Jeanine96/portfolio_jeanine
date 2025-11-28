@@ -6,13 +6,13 @@ export default function Home() {
     <main>
       <section
         id="homepage"
-        className="flex flex-col ml-[152] mr-[92]  max-h-screen mb-8"
-        style={{ minHeight: "calc(100vh - 6rem)" }}
+        className="flex flex-col ml-0 mr-0 max-h-screen md:mb-8 md:ml-[152px] md:mr-[92px]  "
+        style={{ minHeight: "md:calc(100vh - 6rem)" }}
       >
         <HomePage></HomePage>
       </section>
 
-      <section id="projects" className="bg-tertiary px-[152]">
+      <section id="projects" className="bg-tertiary px-[16px] md:px-[152]">
         <ProjectPage></ProjectPage>
       </section>
     </main>
