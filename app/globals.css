@@ -27,8 +27,8 @@
 
   /* Font sizes mobile */
   --text-fontsize-h1-mobile: 56px;
-  --text-fontsize-h2-mobile: 24px;
-  --text-fontsize-h3-mobile: 20px;
+  --text-fontsize-h2-mobile: 32px;
+  --text-fontsize-h3-mobile: 28px;
   --text-fontsize-h4-mobile: 18px;
   --text-fontsize-button-mobile: 16px;
   --text-fontsize-body-mobile: 16px;
@@ -65,14 +65,3 @@
   --color-text-two: 178 203 11;
   --color-text-three: 255 255 255;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: 10 10 10;
-    --foreground: 237 237 237;
-  }
-}
-
-body {
-
-} */

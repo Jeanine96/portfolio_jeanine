@@ -35,7 +35,7 @@ export default function ProjectItem({
 }: ProjectItemProps) {
   const MediaElement =
     mediaType === "image" ? (
-      <div className="relative w-[25vw] h-[24vw]">
+      <div className="relative w-full h-[100vw] md:w-[25vw] md:h-[24vw]">
         <Image
           src={media}
           alt={title}
@@ -53,7 +53,7 @@ export default function ProjectItem({
 
   return (
     <div className="flex flex-col ">
-      <h4 className="text-fontsize-h4-mobile font-h4 text-text-one mb-6 md:text-fontsize-h4 ">
+      <h4 className="text-fontsize-h4-mobile font-h4 text-text-one mb-4 md:mb-6 md:text-fontsize-h4 ">
         {title}
       </h4>
       {tags.length > 0 && (
@@ -63,19 +63,19 @@ export default function ProjectItem({
           ))}
         </div>
       )}
-      <div className="flex-col md:flex flex-row mt-8 gap-35">
+      <div className="flex-col md:flex md:flex-row mt-8 gap-35">
         {mediaPosition === "left" && (
-          <div className="flex-1">{MediaElement}</div>
+          <div className="md:flex-1">{MediaElement}</div>
         )}
         <div className="flex flex-col h-full gap-6">
-          <p className="text-text-one text-fontsize-body-mobile font-body leading-lineheight-text-regular md:text-fontsize-body flex-1">
+          <p className="text-text-one text-fontsize-body-mobile font-body leading-lineheight-text-regular mt-4 md:text-fontsize-body flex-1">
             {description}
           </p>
           {buttonProps && <Button {...buttonProps} />}
         </div>
 
         {mediaPosition === "right" && (
-          <div className="flex-1 flex justify-end">{MediaElement}</div>
+          <div className="md:flex-1 flex justify-end">{MediaElement}</div>
         )}
       </div>
     </div>

@@ -102,7 +102,7 @@ export default function Menu({ menuItems }: AnimatedMenuProps) {
   };
 
   useEffect(() => {
-    if (window.innerWidth < 768) return; // only desktop
+    if (window.innerWidth < 768) return;
     if (!pointerRef.current) return;
 
     const movePointer = (e: MouseEvent) => {

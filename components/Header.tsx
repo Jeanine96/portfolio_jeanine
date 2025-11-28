@@ -20,7 +20,7 @@ export default function Header() {
       </span>
       {/* mobile */}
       <div className="bg-primary md:hidden p-4">
-        <span className="flex-row flex justify-between py-4 mx-5 items-center ">
+        <span className="flex-row flex justify-between py-4 items-center ">
           <Link href={"/"}>
             <img className="w-1/2" src="/logo_jeanine.svg" alt="Logo" />
           </Link>

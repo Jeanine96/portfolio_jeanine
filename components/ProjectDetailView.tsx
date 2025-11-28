@@ -30,8 +30,10 @@ export default function ProjectDetailView({
   description = "",
 }: ProjectDetailProps) {
   return (
-    <div className="flex flex-col  max-w-2xl mx-auto py-20">
-      <h3 className="text-fontsize-h3 text-text-one font-h3 mb-8">{title}</h3>
+    <div className="flex flex-col px-4  md:max-w-2xl md:mx-auto py-20">
+      <h3 className="text-fontsize-h3-mobile text-text-one font-h3 mb-4 md:text-fontsize-h3 md:mb-8">
+        {title}
+      </h3>
 
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
@@ -45,11 +47,11 @@ export default function ProjectDetailView({
           alt={title}
           width={800}
           height={600}
-          className="object-contain rounded-lg max-w-lg max-h-[60vh]"
+          className="object-contain rounded-lg max-h-[40vh] md:max-w-lg md:max-h-[60vh]"
         />
       </div>
 
-      <div className="text-text-one text-fontsize-body font-body leading-lineheight-text-regular mb-2">
+      <div className="text-fontsize-body-mobile text-text-one md:text-fontsize-body font-body leading-lineheight-text-regular mb-2">
         {Array.isArray(description) ? (
           description.map((para, idx) => (
             <p key={idx} className="mb-4">

@@ -23,6 +23,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
         />
         <link rel="icon" href="/favicon-J.svg" type="image/svg+xml" />
+        <meta property="og:title" content="Portfolio Jeanine de Regter" />
+        <meta property="og:image" content="./image-portfolio-jeanine.png" />
       </head>
       <body
         className={`${montserrat.variable} antialiased relative min-h-screen leading-lineheight-text`}

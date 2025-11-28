@@ -29,118 +29,64 @@ export default function HomePage() {
       className: "ml-auto",
     },
   ];
-  //   return (
-  //     <div className="w-full max-w-7xl mx-auto px-4">
-  //       <div className="flex flex-col gap-48 md:flex-row md:items-center md:justify-between">
-  //         {/* Title */}
-  //         <div className="w-84 items-center">
-  //           <h2 className="text-text-two text-fontsize-h2 font-h2">Front-end</h2>
-
-  //           <div className="flex flex-row items-center gap-4">
-  //             <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
-  //               Developer
-  //             </h2>
-  //             <PulsingIcon
-  //               iconName="health_metrics"
-  //               size="!text-5xl"
-  //               pulseAmount={0.3}
-  //               className="text-text-three"
-  //             />
-  //           </div>
-  //           {/* subtext */}
-  //           <p className="text-text-three text-fontsize-body font-body">
-  //             Ik vind het interessant om digitale producten te ontwikkelen voor de
-  //             medische wereld.
-  //           </p>
-  //         </div>
-
-  //         {/* Picture with Icons */}
-  //         <div className="flex flex-row items-center gap-25">
-  //           <div className="relative w-40 md:w-48">
-  //             <div className="absolute inset-0 translate-x-6 translate-y-6 border border-text-three rounded-lg z-0"></div>
-
-  //             <img
-  //               className="rounded-lg w-full h-auto relative z-10"
-  //               src="./picture_jeanine.jpeg"
-  //               alt="picture"
-  //             />
-  //           </div>
-
-  //           <IconsColumn
-  //             className="gap-4 w-40 md:gap-8 md:w-50"
-  //             programlanguageicons={codeIcons}
-  //           />
-  //         </div>
-  //       </div>
-
-  //       <div className="flex col mt-10 justify-center">
-  //         <ScrollDownIndicator />
-  //       </div>
-  //     </div>
-  //   );
-  // }
   return (
-    <div className="w-full h-screen ">
+    <div className="w-full">
       {/* Desktop Layout */}
-      <div className="hidden md:flex flex-row items-center justify-between gap-48">
-        {/* Title */}
-        <div className="w-84">
-          <h2 className="text-text-two text-fontsize-h2 font-h2">Front-end</h2>
-          <div className="flex flex-row items-center gap-4">
-            <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
-              Developer
+      <div className="hidden: md:flex flex-col ">
+        <div className="hidden md:flex flex-row items-center justify-between gap-48">
+          {/* Title */}
+          <div className="w-84">
+            <h2 className="text-text-two text-fontsize-h2 font-h2">
+              Front-end
             </h2>
-            <PulsingIcon
-              iconName="health_metrics"
-              size="!text-5xl"
-              pulseAmount={0.3}
-              className="text-text-three"
-            />
+            <div className="flex flex-row items-center gap-4">
+              <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
+                Developer
+              </h2>
+            </div>
+            <p className="text-text-three text-fontsize-body font-body">
+              Ik vind het interessant om digitale producten te ontwikkelen, die
+              gebruiksvriendelijk zijn.
+            </p>
           </div>
-          <p className="text-text-three text-fontsize-body font-body">
-            Ik vind het interessant om digitale producten te ontwikkelen voor de
-            medische wereld.
-          </p>
-        </div>
 
-        {/* Picture with Icons */}
-        <div className="flex flex-row items-center gap-25">
-          <div className="relative w-48">
-            <div className="absolute inset-0 translate-x-6 translate-y-6 border border-text-three rounded-lg z-0"></div>
-            <img
-              className="rounded-lg w-full h-auto relative z-10"
-              src="./picture_jeanine.jpeg"
-              alt="picture"
+          {/* Picture with Icons */}
+          <div className="flex flex-row items-center gap-25">
+            <div className="relative w-48">
+              <div className="absolute inset-0 translate-x-6 translate-y-6 border border-text-three rounded-lg z-0"></div>
+              <img
+                className="rounded-lg w-full h-auto relative z-10"
+                src="./picture_jeanine.jpeg"
+                alt="picture"
+              />
+            </div>
+            <IconsColumn
+              className="gap-8 w-50"
+              programlanguageicons={codeIcons}
             />
           </div>
-          <IconsColumn
-            className="gap-8 w-50"
-            programlanguageicons={codeIcons}
-          />
+        </div>
+        {/* Scroll Down */}
+        <div className="hidden md:flex justify-center">
+          <ScrollDownIndicator />
         </div>
       </div>
-
       {/* Mobile Layout */}
       <div className="flex flex-col bg-primary md:hidden">
-        <div className="w-84 px-4 py-20">
+        <div className="w-84 px-4 pb-10 pt-0">
           <h2 className="text-text-two text-fontsize-h2 font-h2">Front-end</h2>
           <div className="flex flex-row items-center gap-4">
             <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
               Developer
             </h2>
-            <PulsingIcon
-              iconName="health_metrics"
-              size="!text-5xl"
-              pulseAmount={0.3}
-              className="text-text-three"
-            />
           </div>
           <p className="text-text-three text-fontsize-body font-body">
-            Ik vind het interessant om digitale producten te ontwikkelen voor de
-            medische wereld.
+            Ik vind het interessant om digitale producten te ontwikkelen, die
+            gebruiksvriendelijk zijn.
           </p>
         </div>
-        <div className="flex flex-row items-center gap-10 bg-secondary px-4">
+
+        <div className="flex flex-row items-center gap-20 bg-secondary px-4 py-6">
           <div className="relative w-40">
             <div className="absolute inset-0 translate-x-4 translate-y-4 border border-text-three rounded-lg z-0"></div>
             <img
@@ -154,11 +100,6 @@ export default function HomePage() {
             programlanguageicons={codeIcons}
           />
         </div>
-      </div>
-
-      {/* Scroll Down */}
-      <div className="flex mt-10 justify-center">
-        <ScrollDownIndicator />
       </div>
     </div>
   );
