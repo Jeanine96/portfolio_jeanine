@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PulsingIcon from "./PulsingIcon";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -40,21 +41,13 @@ export default function Footer() {
                   "https://www.linkedin.com/in/jeanine-de-regter-683638144/"
                 }
               >
-                <img
-                  className="w-12 h-12 hover:scale-110"
-                  src="./linkedin-icon.svg"
-                  alt="linkedin-icon"
-                />
+                <FaLinkedin className="w-12 h-12 text-text-two hover:scale-110" />
               </Link>
               <Link
                 target="_blank"
                 href={"https://github.com/Jeanine96?tab=repositories"}
               >
-                <img
-                  className="w-12 h-12 hover:scale-110"
-                  src="./github-icon.svg"
-                  alt="github-icon"
-                />
+                <FaGithub className="w-12 h-12 text-text-two hover:scale-110" />
               </Link>
             </div>
           </div>
@@ -88,27 +81,19 @@ export default function Footer() {
               © Jeanine de Regter 2025
             </p>
             <div className="flex flex-row gap-8">
-              <Link
+               <Link
                 target="_blank"
                 href={
                   "https://www.linkedin.com/in/jeanine-de-regter-683638144/"
                 }
               >
-                <img
-                  className="w-12 h-12"
-                  src="./linkedin-icon.svg"
-                  alt="linkedin-icon"
-                />
+                <FaLinkedin className="w-12 h-12 text-text-two" />
               </Link>
               <Link
                 target="_blank"
                 href={"https://github.com/Jeanine96?tab=repositories"}
               >
-                <img
-                  className="w-12 h-12"
-                  src="./github-icon.svg"
-                  alt="github-icon"
-                />
+                <FaGithub className="w-12 h-12 text-text-two" />
               </Link>
             </div>
           </div>

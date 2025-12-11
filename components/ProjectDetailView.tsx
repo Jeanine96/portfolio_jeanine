@@ -2,11 +2,13 @@
 import Image from "next/image";
 import Tag from "./Tag";
 import Button from "./Button";
+import { ReactNode } from "react";
+import { IconType } from "react-icons";
 
 interface TagProps {
-  src: string;
-  alt: string;
   text: string;
+  icon:ReactNode;
+  fillType: "fill" | "stroke";
 }
 
 interface ProjectDetailProps {
@@ -17,8 +19,8 @@ interface ProjectDetailProps {
   buttonProps?: {
     text: string;
     redirectTo?: string;
-    iconSrc: string;
-    iconAlt: string;
+    icon?: IconType;       
+     iconColor?: string;
   };
 }
 
@@ -63,7 +65,14 @@ export default function ProjectDetailView({
         )}
       </div>
 
-      {buttonProps && <Button {...buttonProps} />}
+    {buttonProps && (
+  <Button
+    text={buttonProps.text}
+    redirectTo={buttonProps.redirectTo}
+    icon={buttonProps.icon}
+    iconColor={buttonProps.iconColor}
+  />
+)}
     </div>
   );
 }
