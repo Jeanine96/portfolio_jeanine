@@ -1,20 +1,20 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
+import { IconType } from "react-icons";
 
-type ProgramLanguageIcon = {
-  src: string;
-  alt: string;
+export type ProgramLanguageIcon = {
+  icon: IconType; 
   rotate?: number;
   className?: string;
   style?: React.CSSProperties;
+  fillType?: "fill" | "stroke"; 
 };
 
 type IconsColumnProps = {
   programlanguageicons: ProgramLanguageIcon[];
-  size?: string;
+  size?: string; 
   className?: string;
 };
 
@@ -31,32 +31,35 @@ export default function IconsColumn({
     const icons = columnRef.current.querySelectorAll(".icon-item");
 
     gsap.from(icons, {
-      y: -100, // fall from above
+      y: -100,
       opacity: 0,
       duration: 0.8,
       ease: "power2.out",
-      stagger: 0.4, // <— one-by-one falling
+      stagger: 0.4,
     });
   }, []);
 
   return (
     <div ref={columnRef} className={`flex flex-col ${className}`}>
-      {programlanguageicons.map((icon, index) => {
-        const rotation = icon.rotate ?? 0;
+      {programlanguageicons.map((iconItem, index) => {
+        const rotation = iconItem.rotate ?? 0;
+        const IconComponent = iconItem.icon;
+
+        
+        const fillClass =
+          iconItem.fillType === "stroke"
+            ? "stroke-current"
+            : "fill-current";
 
         return (
           <div
             key={index}
-            className={`icon-item shrink-0 ${icon.className ?? ""}`}
-            style={{ ...icon.style }}
+            className={`icon-item shrink-0 ${iconItem.className ?? ""}`}
+            style={{ ...iconItem.style }}
           >
-            <Image
-              src={icon.src}
-              alt={icon.alt}
-              width={0}
-              height={0}
-              style={{ rotate: `${rotation}deg`, ...icon.style }}
-              className={`${size} object-contain`}
+            <IconComponent
+              className={`${size} ${fillClass} text-text-one opacity-70`}
+              style={{ rotate: `${rotation}deg`, ...iconItem.style }}
             />
           </div>
         );

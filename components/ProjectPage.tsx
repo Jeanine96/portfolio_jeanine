@@ -1,6 +1,10 @@
 import { text } from "stream/consumers";
 import ProjectItem from "./ProjectItem";
-import Tag from "./Tag";
+import { FiFigma, FiTag } from "react-icons/fi";
+import { FaHtml5, FaSwift } from "react-icons/fa";
+import { SiAdobephotoshop, SiJavascript, SiVite } from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io";
+import { BiLogoVuejs } from "react-icons/bi";
 export default function ProjectPage() {
   return (
     <>
@@ -20,10 +24,14 @@ export default function ProjectPage() {
           width="35vw"
           height="20vw"
           tags={[
-            {
-              src: "/swiftui-icon-tag.svg",
-              alt: "swiftui-icon-tag",
-              text: "SwiftUI",
+           {
+            icon: <FaSwift />, text:"SwiftUI", fillType: "fill"
+            },
+           {
+            icon: <FiFigma />, text:"Figma", fillType: "stroke"
+            },
+             {
+            icon: <SiAdobephotoshop />, text:"Photoshop", fillType: "fill"
             },
           ]}
           buttonProps={{ text: "Bekijk project", redirectTo: "/project1" }}
@@ -40,25 +48,21 @@ export default function ProjectPage() {
           height="30vw"
           tags={[
             {
-              src: "/vite-icon.svg",
-              alt: "vite-icon-tag",
-              text: "Vite",
+            icon: <SiVite />, text:"Vite", fillType: "fill"
+            },
+               {
+            icon: <FaHtml5 />, text:"HTML", fillType: "fill"
             },
             {
-              src: "/html5-icon-tag.svg",
-              alt: "html5-icon-tag",
-              text: "HTML",
+            icon: <IoLogoCss3 />, text: "CSS", fillType: "fill"
             },
             {
-              src: "/css3-icon-tag.svg",
-              alt: "css3-icon-tag",
-              text: "CSS",
+            icon: <SiJavascript />, text:"Javascript", fillType: "fill"
             },
-            {
-              src: "/javascript-icon-tag.svg",
-              alt: "javascript-icon-tag",
-              text: "JavaScript",
+              {
+            icon: <FiFigma />, text:"Figma", fillType: "stroke"
             },
+           
           ]}
           buttonProps={{ text: "Bekijk project", redirectTo: "/project2" }}
         ></ProjectItem>
@@ -71,10 +75,11 @@ export default function ProjectPage() {
           mediaType="image"
           mediaPosition="right"
           tags={[
-            {
-              src: "/vuejs-icon-tag.svg",
-              alt: "vuejs-icon-tag",
-              text: "Vue.js",
+           {
+            icon: <BiLogoVuejs />, text:"Vue.js", fillType: "fill"
+            },
+                 {
+            icon: <FiFigma />, text:"Figma", fillType: "stroke"
             },
           ]}
           buttonProps={{ text: "Bekijk project", redirectTo: "/project3" }}
@@ -95,11 +100,15 @@ export default function ProjectPage() {
             width="100%"
             height="50vw"
             tags={[
-              {
-                src: "/swiftui-icon-tag.svg",
-                alt: "swiftui-icon-tag",
-                text: "SwiftUI",
-              },
+                    {
+            icon: <FaSwift />, text:"SwiftUI", fillType: "fill"
+            },
+           {
+            icon: <FiFigma />, text:"Figma", fillType: "stroke"
+            },
+             {
+            icon: <SiAdobephotoshop />, text:"Photoshop", fillType: "fill"
+            },
             ]}
             buttonProps={{ text: "Bekijk project", redirectTo: "/project1" }}
           ></ProjectItem>
@@ -114,26 +123,21 @@ export default function ProjectPage() {
             width="100%"
             height="100vw"
             tags={[
+            {
+            icon: <SiVite />, text:"Vite", fillType: "fill"
+            },
+               {
+            icon: <FaHtml5 />, text:"HTML", fillType: "fill"
+            },
+            {
+            icon: <IoLogoCss3 />, text: "CSS", fillType: "fill"
+            },
+            {
+            icon: <SiJavascript />, text:"Javascript", fillType: "fill"
+            },
               {
-                src: "/vite-icon.svg",
-                alt: "vite-icon-tag",
-                text: "Vite",
-              },
-              {
-                src: "/html5-icon-tag.svg",
-                alt: "html5-icon-tag",
-                text: "HTML",
-              },
-              {
-                src: "/css3-icon-tag.svg",
-                alt: "css3-icon-tag",
-                text: "CSS",
-              },
-              {
-                src: "/javascript-icon-tag.svg",
-                alt: "javascript-icon-tag",
-                text: "JavaScript",
-              },
+            icon: <FiFigma />, text:"Figma", fillType: "stroke"
+            },
             ]}
             buttonProps={{ text: "Bekijk project", redirectTo: "/project2" }}
           ></ProjectItem>
@@ -148,11 +152,12 @@ export default function ProjectPage() {
             width="100%"
             height="100vw"
             tags={[
-              {
-                src: "/vuejs-icon-tag.svg",
-                alt: "vuejs-icon-tag",
-                text: "Vue.js",
-              },
+            {
+            icon: <BiLogoVuejs />, text:"Vue.js", fillType: "fill"
+            },
+                 {
+            icon: <FiFigma />, text:"Figma", fillType: "stroke"
+            },
             ]}
             buttonProps={{ text: "Bekijk project", redirectTo: "/project3" }}
           ></ProjectItem>

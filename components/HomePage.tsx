@@ -1,30 +1,37 @@
-import IconsColumn from "@/components/ProgramLanguageIcon";
-import PulsingIcon from "@/components/PulsingIcon";
+"use client";
+import IconsColumn, { ProgramLanguageIcon } from "@/components/ProgramLanguageIcon";
 import ScrollDownIndicator from "@/components/ScrollDownIndicator";
+import { BiLogoVuejs } from "react-icons/bi";
+import { FaHtml5 } from "react-icons/fa";
+import { FiFigma } from "react-icons/fi";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiJavascript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 export default function HomePage() {
-  const codeIcons = [
+  const codeIcons: ProgramLanguageIcon[] = [
     {
-      src: "/nextjs-icon.svg",
-      alt: "Next.js",
+     icon: TbBrandNextjs,
+     fillType: "stroke",
       rotate: -15.22,
     },
     {
-      src: "/html5-icon.svg",
-      alt: "HTML5",
+     icon:FaHtml5,
       rotate: 15.22,
+           fillType: "fill",
       className: "ml-auto",
     },
-    { src: "/javascript-icon.svg", alt: "JavaScript", rotate: -15.22 },
+    { icon: SiJavascript,  fillType: "fill", rotate: -15.22 },
     {
-      src: "/vuejs-icon.svg",
-      alt: "Vue.js",
+      icon: BiLogoVuejs,
       rotate: 15.22,
+       fillType: "fill",
       className: "ml-auto",
     },
-    { src: "/css3-icon.svg", alt: "css3.js", rotate: -15.22 },
+    { icon: IoLogoCss3,  fillType: "fill", rotate: -15.22 },
     {
-      src: "/swiftui-icon.svg",
-      alt: "SwiftUI",
+     icon: FiFigma,
+      fillType: "stroke",
       rotate: 15.22,
       className: "ml-auto",
     },
@@ -60,10 +67,10 @@ export default function HomePage() {
                 alt="picture"
               />
             </div>
-            <IconsColumn
-              className="gap-8 w-50"
-              programlanguageicons={codeIcons}
-            />
+          <IconsColumn
+     className="gap-8 w-55"
+            programlanguageicons=  {codeIcons}
+/>
           </div>
         </div>
         {/* Scroll Down */}

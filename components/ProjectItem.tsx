@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Tag from "./Tag";
 import Button from "./Button";
+import { ReactNode } from "react";
 
 interface TagProps {
-  src: string;
-  alt: string;
+icon: ReactNode;
   text: string;
+  fillType: "fill" | "stroke";
 }
 
 interface ProjectItemProps {

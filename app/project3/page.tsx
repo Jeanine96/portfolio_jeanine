@@ -1,4 +1,6 @@
 import ProjectDetailView from "@/components/ProjectDetailView";
+import { BiLogoVuejs } from "react-icons/bi";
+import { FiFigma } from "react-icons/fi";
 
 export default function IntershipBundelingProject() {
   return (
@@ -7,9 +9,14 @@ export default function IntershipBundelingProject() {
         title={"Praktijkervaring bij Bundeling"}
         tags={[
           {
-            src: "/vuejs-icon-tag.svg",
-            alt: "vuejs-icon-tag",
+            icon: <BiLogoVuejs />,
             text: "Vue.js",
+            fillType: "fill",
+          },
+          {
+            icon: <FiFigma />,
+            text: "Figma",
+            fillType: "stroke",
           },
         ]}
         image={"/bundeling.png"}

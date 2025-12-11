@@ -1,4 +1,9 @@
+"use client"
 import ProjectDetailView from "@/components/ProjectDetailView";
+import { FaGithub, FaHtml5 } from "react-icons/fa";
+import { FiFigma } from "react-icons/fi";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiJavascript, SiVite } from "react-icons/si";
 
 export default function SpotifyDeafUserProject() {
   return (
@@ -7,24 +12,29 @@ export default function SpotifyDeafUserProject() {
         title={"Spotify voor dove gebruikers"}
         tags={[
           {
-            src: "/vite-icon.svg",
-            alt: "vite-icon-tag",
+            icon: <SiVite />,
             text: "Vite",
+            fillType: "fill",
           },
           {
-            src: "/html5-icon-tag.svg",
-            alt: "html5-icon-tag",
+            icon: <FaHtml5 />,
             text: "HTML",
+            fillType: "fill",
           },
           {
-            src: "/css3-icon-tag.svg",
-            alt: "css3-icon-tag",
+            icon: <IoLogoCss3 />,
             text: "CSS",
+            fillType: "fill",
           },
           {
-            src: "/javascript-icon-tag.svg",
-            alt: "javascript-icon-tag",
-            text: "JavaScript",
+            icon: <SiJavascript />,
+            text: "Javascript",
+            fillType: "fill",
+          },
+          {
+            icon: <FiFigma />,
+            text: "Figma",
+            fillType: "stroke",
           },
         ]}
         image={"/spotify-dove-gebruiker-screenshot.png"}
@@ -39,12 +49,12 @@ export default function SpotifyDeafUserProject() {
 
           "Tijdens dit project heb ik geleerd om component-based te werken in Vite. Volgende keer wil ik me verder verdiepen in het structureren van code volgens het C4-model en in het gebruik van duidelijkere benamingen.",
         ]}
-        buttonProps={{
-          text: "Bekijk code",
-          redirectTo: "https://github.com/Jeanine96/beat_visualization_spotify",
-          iconSrc: "/github-icon.svg",
-          iconAlt: "github-icon",
-        }}
+           buttonProps={{
+                text: "Bekijk code",
+                redirectTo: "https://github.com/Jeanine96/Runnovation",
+                icon: FaGithub,
+                iconColor: "text-text-two",
+              }}
       />
     </section>
   );

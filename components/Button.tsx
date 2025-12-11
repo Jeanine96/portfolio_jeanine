@@ -1,22 +1,22 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+import { IconType } from "react-icons"; 
 
 interface ButtonProps {
   text: string;
-  iconSrc?: string;
-  iconAlt?: string;
+  icon?: IconType;       
+  iconColor?: string;     
   redirectTo?: string;
   className?: string;
 }
 
 export default function Button({
   text,
-  iconSrc,
-  iconAlt,
+  icon: Icon,
+  iconColor = "text-text-two",
   redirectTo,
-  className,
+  className = "",
 }: ButtonProps) {
   const router = useRouter();
 
@@ -29,20 +29,17 @@ export default function Button({
       router.push(redirectTo);
     }
   };
+
   return (
     <div className="flex-inline">
       <button
         onClick={handleClick}
         disabled={!redirectTo}
-        className={`inline-flex items-center gap-2 py-2 px-4 bg-primary text-text-two text-fontsize-button font-button rounded-lg transition-colors duration-300 hover:bg-primary-lighter`}
+         className={`inline-flex items-center gap-2 py-2 px-4 bg-primary text-text-two text-fontsize-button font-button rounded-lg transition-colors duration-300 hover:bg-primary-lighter`}
       >
-        {iconSrc && (
-          <Image
-            src={iconSrc}
-            alt={iconAlt || "icon"}
-            width={20}
-            height={20}
-            className="object-contain"
+        {Icon && (
+          <Icon
+            className={`w-5 h-5 ${iconColor}`}
           />
         )}
         {text}

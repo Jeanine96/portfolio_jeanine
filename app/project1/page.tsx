@@ -1,6 +1,9 @@
-import Button from "@/components/Button";
+"use client"
 import ProjectDetailView from "@/components/ProjectDetailView";
-import { text } from "stream/consumers";
+import { FaSwift } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { FiFigma } from "react-icons/fi";
+import { SiAdobephotoshop } from "react-icons/si";
 
 export default function RunnovationProject() {
   return (
@@ -8,10 +11,16 @@ export default function RunnovationProject() {
       <ProjectDetailView
         title={"Runnovation"}
         tags={[
+          { icon: <FaSwift />, text: "SwiftUI", fillType: "fill" },
           {
-            src: "/swiftui-icon-tag.svg",
-            alt: "swiftui-icon-tag",
-            text: "SwiftUI",
+            icon: <FiFigma />,
+            text: "Figma",
+            fillType: "stroke",
+          },
+          {
+            icon: <SiAdobephotoshop />,
+            text: "Photoshop",
+            fillType: "fill",
           },
         ]}
         image={"/runnovation-screenshot.png"}
@@ -26,8 +35,8 @@ export default function RunnovationProject() {
         buttonProps={{
           text: "Bekijk code",
           redirectTo: "https://github.com/Jeanine96/Runnovation",
-          iconSrc: "/github-icon.svg",
-          iconAlt: "github-icon",
+          icon: FaGithub,
+          iconColor: "text-text-two",
         }}
       />
     </section>
