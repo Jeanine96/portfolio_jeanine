@@ -42,13 +42,13 @@ export default function HomePage() {
       <div className="hidden: md:flex flex-col ">
         <div className="hidden md:flex flex-row items-center justify-between gap-48">
           {/* Title */}
-          <div className="w-84">
+          <div className="w-140">
             <h2 className="text-text-two text-fontsize-h2 font-h2">
-              Front-end
+              UI/UX designer/
             </h2>
             <div className="flex flex-row items-center gap-4">
               <h2 className="text-text-two text-fontsize-h2 font-h2 mb-[20]">
-                Developer
+               Front-end Developer
               </h2>
             </div>
             <p className="text-text-three text-fontsize-body font-body">
